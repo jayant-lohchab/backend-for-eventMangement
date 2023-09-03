@@ -33,7 +33,7 @@ router.post("/", async (req, res, next) => {
   let errors = {};
 
   if (!isValidText(data.title)) {
-    errors.title = "Invalid title.";
+    errors.title = "Invalid title given";
   }
 
   if (!isValidText(data.description)) {
